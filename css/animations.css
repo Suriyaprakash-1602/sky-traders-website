@@ -1,0 +1,125 @@
+/* SKY TRADERS - ANIMATIONS & KEYFRAMES */
+
+/* Floating Leaf Keyframe */
+@keyframes floatLeaf {
+  0% {
+    transform: translateY(-50px) rotate(0deg) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(105vh) rotate(360deg) translateX(120px);
+    opacity: 0;
+  }
+}
+
+/* Mouse Wheel Scroll Animation */
+@keyframes scrollWheel {
+  0% {
+    top: 6px;
+    opacity: 1;
+  }
+  100% {
+    top: 24px;
+    opacity: 0;
+  }
+}
+
+/* Infinite Marquee Animation for Partners */
+@keyframes partnerMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Glowing Gold Pulse */
+@keyframes goldPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(212, 175, 55, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+  }
+}
+
+.pulse-gold {
+  animation: goldPulse 2s infinite;
+}
+
+/* SVG Export Route Arc Dash Animation */
+@keyframes dashArc {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+.route-arc {
+  stroke-dasharray: 8, 8;
+  animation: dashArc 4s linear infinite;
+}
+
+/* Map Pulse Beacon */
+@keyframes beaconPulse {
+  0% {
+    r: 4;
+    opacity: 1;
+  }
+  100% {
+    r: 20;
+    opacity: 0;
+  }
+}
+
+.beacon-ring {
+  animation: beaconPulse 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+/* Scroll Reveal Classes */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left.active, .reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Shimmer Loading Animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

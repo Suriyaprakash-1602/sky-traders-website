@@ -1,0 +1,1345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKY Traders | Premium Coconut Exporters India | Tamil Nadu</title>
+    <meta
+      name="description"
+      content="SKY Traders is India's leading exporter of premium Semi Husked, Fully Husked, and Fresh Coconuts sourced directly from lush farms in Udumelpet, Tamil Nadu. Worldwide shipping to UAE, Malaysia, Singapore, Europe & globally."
+    />
+    <meta
+      name="keywords"
+      content="Coconut Export India, Semi Husked Coconut Exporter, Fully Husked Coconut, Fresh Coconut Exporters Tamil Nadu, SKY Traders Udumelpet, Indian Coconut Exporters"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+
+    <!-- FontAwesome Icons & Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+
+    <!-- Toast Notification Custom CSS -->
+    <style>
+      .toast-notification {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: rgba(7, 59, 45, 0.95);
+        border: 1px solid var(--color-gold);
+        border-radius: 16px;
+        padding: 20px 24px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        color: #fff;
+        box-shadow:
+          0 20px 40px rgba(0, 0, 0, 0.5),
+          0 0 20px rgba(212, 175, 55, 0.3);
+        z-index: 3000;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: all 0.4s ease;
+        backdrop-filter: blur(15px);
+      }
+      .toast-notification.show {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      .toast-notification i {
+        font-size: 2rem;
+        color: var(--color-gold);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ---------------------------------------------------
+  NAVIGATION BAR
+  --------------------------------------------------- -->
+    <header class="navbar-wrapper" id="navbar-wrapper">
+      <nav class="navbar">
+        <a href="#home" class="nav-brand">
+          <img
+            src="assets/logo-light.svg"
+            alt="SKY Traders Logo"
+            class="nav-logo-img"
+          />
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#export-process" class="nav-link">Export</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#partners" class="nav-link">Partners</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#enquiry" class="btn-primary nav-btn">Enquiry</a></li>
+        </ul>
+
+        <button
+          class="mobile-toggle"
+          id="mobile-toggle"
+          aria-label="Toggle Navigation Menu"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="mobile-close-btn" id="mobile-close">&times;</button>
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+        <li><a href="#products" class="mobile-nav-link">Our Products</a></li>
+        <li>
+          <a href="#export-process" class="mobile-nav-link">Export Process</a>
+        </li>
+        <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="#partners" class="mobile-nav-link">Partners</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        <li>
+          <a
+            href="#enquiry"
+            class="mobile-nav-link"
+            style="color: var(--color-gold)"
+            >Get Quote / Enquiry</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- ---------------------------------------------------
+  HERO SECTION
+  --------------------------------------------------- -->
+    <section id="home" class="hero">
+      <div class="hero-video-wrapper">
+        <video
+          class="hero-video"
+          autoplay
+          loop
+          muted
+          playsinline
+          poster="assets/images/farm_udumelpet.jpg"
+        >
+          <!-- Royalty free cinematic background stream -->
+          <source
+            src="https://assets.mixkit.co/videos/preview/mixkit-top-view-of-a-beach-and-the-ocean-41505-large.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="hero-overlay"></div>
+      <canvas id="hero-canvas"></canvas>
+
+      <div class="floating-leaves-container"></div>
+
+      <div class="hero-content">
+        <div class="hero-tag">
+          <i class="fas fa-crown"></i> SKY TRADERS • EST. TAMIL NADU
+        </div>
+        <h1 class="hero-title">
+          Premium Coconut <span class="gold-accent">Exporters</span>
+        </h1>
+        <p class="hero-subtitle">
+          "Delivering Freshness from India to the World"
+        </p>
+        <div class="hero-buttons">
+          <a href="#products" class="btn-primary">
+            <i class="fas fa-leaf"></i> Explore Products
+          </a>
+          <a
+            href="#enquiry"
+            class="btn-outline btn-get-quote"
+            data-product="General Inquiry"
+          >
+            <i class="fas fa-paper-plane"></i> Get Quote
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="mouse-icon">
+          <div class="mouse-wheel"></div>
+        </div>
+        <span>SCROLL TO EXPLORE</span>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------
+  ABOUT SECTION
+  --------------------------------------------------- -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrapper reveal-left">
+            <img
+              src="assets/images/farm_udumelpet.jpg"
+              alt="Tamil Nadu Coconut Farm - SKY Traders"
+              class="about-img"
+            />
+            <div class="about-badge-floating">
+              <div class="num">100%</div>
+              <div class="text">NATURAL FARM DIRECT</div>
+            </div>
+          </div>
+
+          <div class="about-content-box reveal-right">
+            <div class="subtitle-badge">
+              <i class="fas fa-award"></i> World-Class Exporters
+            </div>
+            <h2 class="section-title">
+              India's Trusted Exporter of
+              <span class="text-gold">Premium Coconuts</span>
+            </h2>
+            <p class="about-intro">
+              SKY Traders is one of India's most trusted exporters of premium
+              quality coconuts, operating directly out of Udumelpet, Tamil Nadu
+              — the heartland of lush, fertile coconut groves.
+            </p>
+            <p class="section-desc">
+              We specialize in supplying high-grade semi-husked, fully-husked,
+              and fresh mature coconuts tailored to strict international export
+              standards with uncompromised quality control.
+            </p>
+
+            <div class="spec-list">
+              <div class="spec-item">
+                <i class="fas fa-check-circle"></i> Semi Husked Coconut
+              </div>
+              <div class="spec-item">
+                <i class="fas fa-check-circle"></i> Fully Husked Coconut
+              </div>
+              <div class="spec-item">
+                <i class="fas fa-check-circle"></i> Fresh Mature Coconut
+              </div>
+              <div class="spec-item">
+                <i class="fas fa-check-circle"></i> Export Quality Standard
+              </div>
+            </div>
+
+            <div class="gold-divider"></div>
+
+            <div style="display: flex; gap: 20px; flex-wrap: wrap">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <i
+                  class="fas fa-shield-alt"
+                  style="color: var(--color-gold); font-size: 1.4rem"
+                ></i>
+                <span style="font-weight: 600">Proper Grading & Weight</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px">
+                <i
+                  class="fas fa-shipping-fast"
+                  style="color: var(--color-gold); font-size: 1.4rem"
+                ></i>
+                <span style="font-weight: 600">Timely Container Dispatch</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------
+  WHY CHOOSE US
+  --------------------------------------------------- -->
+    <section class="section-padding" style="background: rgba(4, 37, 28, 0.6)">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="subtitle-badge">
+            <i class="fas fa-star"></i> Unmatched Standard
+          </div>
+          <h2 class="section-title">
+            Why Choose <span class="text-gold">SKY Traders</span>
+          </h2>
+          <p class="section-desc">
+            We set the gold standard in coconut export logistics, farm-direct
+            transparency, and quality assurance.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <div class="why-icon-box"><i class="fas fa-seedling"></i></div>
+            <h3>100% Fresh</h3>
+            <p>
+              Harvested at peak maturity from sun-drenched groves of Udumelpet
+              to ensure high water volume and rich meat thickness.
+            </p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon-box"><i class="fas fa-certificate"></i></div>
+            <h3>Export Grade Quality</h3>
+            <p>
+              Rigorous multi-point quality checks to remove defective nuts,
+              ensuring zero breakage and 60+ days shelf life.
+            </p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon-box"><i class="fas fa-tractor"></i></div>
+            <h3>Farm Direct</h3>
+            <p>
+              No middlemen. Sourced directly from our contracted farming
+              networks, offering unbeatable freshness and origin traceability.
+            </p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon-box"><i class="fas fa-microscope"></i></div>
+            <h3>Quality Inspection</h3>
+            <p>
+              Each batch undergoes strict size sorting, husk removal precision,
+              weight verification, and phytosanitary certification.
+            </p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon-box"><i class="fas fa-box-open"></i></div>
+            <h3>Secure Packing</h3>
+            <p>
+              Packed in ventilated 25kg PP bags or customized mesh bags designed
+              specifically for reefer and dry sea containers.
+            </p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon-box">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <h3>Worldwide Shipping</h3>
+            <p>
+              Seamless export operations across UAE, Malaysia, Singapore, Oman,
+              Qatar, Sri Lanka, Europe, Canada, and Australia.
+            </p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon-box"><i class="fas fa-tags"></i></div>
+            <h3>Best Pricing</h3>
+            <p>
+              Competitive direct FOB & CIF pricing structures backed by
+              transparent contracts and high volume capacity.
+            </p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon-box"><i class="fas fa-handshake"></i></div>
+            <h3>Trusted Export Partner</h3>
+            <p>
+              Building long-term international trade relationships with
+              reliability, integrity, and on-time shipping guarantees.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------
+  PRODUCT SECTION
+  --------------------------------------------------- -->
+    <section id="products" class="section-padding">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="subtitle-badge">
+            <i class="fas fa-boxes"></i> Our Offerings
+          </div>
+          <h2 class="section-title">
+            Export Grade <span class="text-gold">Products</span>
+          </h2>
+          <p class="section-desc">
+            Carefully sorted, weight-graded, and international
+            packaging-compliant coconut varieties.
+          </p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card reveal">
+            <div class="product-img-box">
+              <img
+                src="assets/images/semi_husked.jpg"
+                alt="Semi Husked Coconut"
+                class="product-img"
+              />
+              <span class="product-badge">BEST SELLER</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Semi Husked Coconut</h3>
+              <p class="product-desc">
+                Outer husk partially removed leaving eye protection. Ideal for
+                long sea transport with extended shelf life.
+              </p>
+
+              <div class="product-specs">
+                <div class="spec-row">
+                  <span class="spec-label">Weight</span>
+                  <span class="spec-val">500g - 650g</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Nut Circumference</span>
+                  <span class="spec-val">12 - 14 Inches</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Shelf Life</span>
+                  <span class="spec-val">60 - 70 Days</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Packing / MOQ</span>
+                  <span class="spec-val">25kg PP Bag / 1 FCL</span>
+                </div>
+              </div>
+
+              <button
+                class="btn-primary btn-get-quote"
+                data-product="Semi Husked Coconut"
+              >
+                <i class="fas fa-calculator"></i> Get Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card reveal">
+            <div class="product-img-box">
+              <img
+                src="assets/images/fully_husked.jpg"
+                alt="Fully Husked Coconut"
+                class="product-img"
+              />
+              <span class="product-badge">PREMIUM</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Fully Husked Coconut</h3>
+              <p class="product-desc">
+                Completely de-husked, smooth brown shell coconuts. Cleaned and
+                prepped for immediate retail or industrial processing.
+              </p>
+
+              <div class="product-specs">
+                <div class="spec-row">
+                  <span class="spec-label">Weight</span>
+                  <span class="spec-val">450g - 550g</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Nut Size</span>
+                  <span class="spec-val">11 - 13 Inches</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Shelf Life</span>
+                  <span class="spec-val">45 - 55 Days</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Packing / MOQ</span>
+                  <span class="spec-val">25 Nuts/Bag / 1 FCL</span>
+                </div>
+              </div>
+
+              <button
+                class="btn-primary btn-get-quote"
+                data-product="Fully Husked Coconut"
+              >
+                <i class="fas fa-calculator"></i> Get Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card reveal">
+            <div class="product-img-box">
+              <img
+                src="assets/images/fresh_mature.jpg"
+                alt="Fresh Mature Coconut"
+                class="product-img"
+              />
+              <span class="product-badge">FARM FRESH</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Fresh Mature Coconut</h3>
+              <p class="product-desc">
+                Selected mature coconuts with heavy water content and dense
+                white copra layer, straight from Udumelpet groves.
+              </p>
+
+              <div class="product-specs">
+                <div class="spec-row">
+                  <span class="spec-label">Weight</span>
+                  <span class="spec-val">600g - 750g</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Circumference</span>
+                  <span class="spec-val">13 - 15 Inches</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Shelf Life</span>
+                  <span class="spec-val">65 - 75 Days</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Packing / MOQ</span>
+                  <span class="spec-val">Jute Bag / 1 FCL</span>
+                </div>
+              </div>
+
+              <button
+                class="btn-primary btn-get-quote"
+                data-product="Fresh Mature Coconut"
+              >
+                <i class="fas fa-calculator"></i> Get Quote
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------
+  EXPORT PROCESS TIMELINE
+  --------------------------------------------------- -->
+    <section
+      id="export-process"
+      class="section-padding"
+      style="background: rgba(4, 37, 28, 0.7)"
+    >
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="subtitle-badge">
+            <i class="fas fa-route"></i> Seamless Logistics
+          </div>
+          <h2 class="section-title">
+            Our <span class="text-gold">Export Process</span>
+          </h2>
+          <p class="section-desc">
+            From farm harvesting to container port dispatch — precision in every
+            step.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-step reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-box">
+              <span class="step-num">STEP 01</span>
+              <h3 class="step-title">Farm Collection</h3>
+              <p style="font-size: 0.92rem; opacity: 0.85">
+                Selected mature coconuts picked directly from contracted coconut
+                plantations in Udumelpet.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-step reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-box">
+              <span class="step-num">STEP 02</span>
+              <h3 class="step-title">Cleaning & De-husking</h3>
+              <p style="font-size: 0.92rem; opacity: 0.85">
+                Skilled labor removes outer fibrous husk according to buyer
+                specification (Semi or Fully husked).
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-step reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-box">
+              <span class="step-num">STEP 03</span>
+              <h3 class="step-title">Grading & Weight Sorting</h3>
+              <p style="font-size: 0.92rem; opacity: 0.85">
+                Automated and manual weight inspection to separate nuts into
+                500g+, 600g+ export categories.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-step reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-box">
+              <span class="step-num">STEP 04</span>
+              <h3 class="step-title">Quality Check</h3>
+              <p style="font-size: 0.92rem; opacity: 0.85">
+                Inspection for shell integrity, sound water content, and
+                phytosanitary compliance clearance.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-step reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-box">
+              <span class="step-num">STEP 05</span>
+              <h3 class="step-title">Export Packing</h3>
+              <p style="font-size: 0.92rem; opacity: 0.85">
+                Packed into high-durability 25kg mesh or PP bags to ensure
+                maximum airflow during transit.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-step reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-box">
+              <span class="step-num">STEP 06</span>
+              <h3 class="step-title">Container Stuffing</h3>
+              <p style="font-size: 0.92rem; opacity: 0.85">
+                Loaded into 40ft High Cube sea containers at our export
+                warehouse with temperature/humidity controls.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-step reveal">
+            <div class="timeline-node"></div>
+            <div class="timeline-box">
+              <span class="step-num">STEP 07</span>
+              <h3 class="step-title">Global Shipping</h3>
+              <p style="font-size: 0.92rem; opacity: 0.85">
+                Vessel departure from Tuticorin / Chennai port to destination
+                ports worldwide with full shipping documents.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------
+  WORLD EXPORT MAP
+  --------------------------------------------------- -->
+    <section class="section-padding map-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="subtitle-badge">
+            <i class="fas fa-globe"></i> Global Reach
+          </div>
+          <h2 class="section-title">
+            World <span class="text-gold">Export Map</span>
+          </h2>
+          <p class="section-desc">
+            Connecting Tamil Nadu's finest coconut groves to global sea routes
+            and international trade hubs.
+          </p>
+        </div>
+
+        <div class="map-container reveal" id="map-container">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------
+  STATISTICS
+  --------------------------------------------------- -->
+    <section id="statistics" class="stats-section section-padding">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <div class="stat-icon"><i class="fas fa-shipping-fast"></i></div>
+            <div class="stat-number" data-target="500" data-suffix="+">0+</div>
+            <div class="stat-label">Containers Exported</div>
+          </div>
+
+          <div class="stat-card reveal">
+            <div class="stat-icon"><i class="fas fa-globe"></i></div>
+            <div class="stat-number" data-target="20" data-suffix="+">0+</div>
+            <div class="stat-label">Countries Served</div>
+          </div>
+
+          <div class="stat-card reveal">
+            <div class="stat-icon"><i class="fas fa-smile"></i></div>
+            <div class="stat-number" data-target="1000" data-suffix="+">0+</div>
+            <div class="stat-label">Satisfied Buyers</div>
+          </div>
+
+          <div class="stat-card reveal">
+            <div class="stat-icon"><i class="fas fa-check-double"></i></div>
+            <div class="stat-number" data-target="99" data-suffix="%">0%</div>
+            <div class="stat-label">Quality Assurance</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------
+  GALLERY
+  --------------------------------------------------- -->
+    <section id="gallery" class="section-padding">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="subtitle-badge">
+            <i class="fas fa-images"></i> Visual Tour
+          </div>
+          <h2 class="section-title">
+            Export <span class="text-gold">Gallery</span>
+          </h2>
+          <p class="section-desc">
+            Real glimpses into our coconut plantations, grading warehouse,
+            packing lines, and port loading.
+          </p>
+        </div>
+
+        <div class="gallery-filters reveal">
+          <button class="filter-btn active" data-filter="all">
+            All Photos
+          </button>
+          <button class="filter-btn" data-filter="farms">Coconut Groves</button>
+          <button class="filter-btn" data-filter="processing">
+            Processing & Grading
+          </button>
+          <button class="filter-btn" data-filter="export">
+            Container & Shipping
+          </button>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item reveal" data-category="farms">
+            <img
+              src="assets/images/farm_udumelpet.jpg"
+              alt="Lush Coconut Plantation"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Coconut Groves</h4>
+              <span class="gallery-cat">Udumelpet Farms</span>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="processing">
+            <img
+              src="assets/images/semi_husked.jpg"
+              alt="Semi Husked Sorting"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Semi Husked Grading</h4>
+              <span class="gallery-cat">Quality Inspection</span>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="processing">
+            <img
+              src="assets/images/fully_husked.jpg"
+              alt="Fully Husked Stock"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Fully Husked Warehouse</h4>
+              <span class="gallery-cat">Export Packing</span>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="farms">
+            <img
+              src="assets/images/harvesting.jpg"
+              alt="Harvesting Coconuts"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Farm Harvest</h4>
+              <span class="gallery-cat">Tamil Nadu Groves</span>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="export">
+            <img
+              src="assets/images/container_loading.jpg"
+              alt="Container Stuffing"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Container Stuffing</h4>
+              <span class="gallery-cat">Port Logistics</span>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal" data-category="export">
+            <img
+              src="assets/images/cargo_ship.jpg"
+              alt="Cargo Vessel Shipping"
+              class="gallery-img"
+            />
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Ocean Shipping</h4>
+              <span class="gallery-cat">Global Export</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+      <span class="lightbox-close" id="lightbox-close">&times;</span>
+      <img src="" alt="Enlarged View" class="lightbox-img" id="lightbox-img" />
+    </div>
+
+    <!-- ---------------------------------------------------
+  PARTNERS SECTION
+  --------------------------------------------------- -->
+    <section
+      id="partners"
+      class="section-padding"
+      style="background: rgba(4, 37, 28, 0.6)"
+    >
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="subtitle-badge">
+            <i class="fas fa-building"></i> Strategic Alliances
+          </div>
+          <h2 class="section-title">
+            Our Sister & Partner <span class="text-gold">Companies</span>
+          </h2>
+          <p class="section-desc">
+            Proudly associated with industry leaders in international trade and
+            agriculture exports.
+          </p>
+        </div>
+
+        <div class="partners-container reveal">
+          <div class="partners-track">
+            <!-- Card 1 -->
+            <div class="partner-card">
+              <div class="partner-icon"><i class="fas fa-meteor"></i></div>
+              <div>
+                <div class="partner-name">Cosmic Traders</div>
+                <div style="font-size: 0.8rem; color: var(--color-gold)">
+                  Export Alliance Partner
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="partner-card">
+              <div class="partner-icon"><i class="fas fa-paper-plane"></i></div>
+              <div>
+                <div class="partner-name">RV Traders</div>
+                <div style="font-size: 0.8rem; color: var(--color-gold)">
+                  Global Trade Partner
+                </div>
+              </div>
+            </div>
+
+            <!-- Duplicated for Marquee Loop -->
+            <div class="partner-card">
+              <div class="partner-icon"><i class="fas fa-meteor"></i></div>
+              <div>
+                <div class="partner-name">Cosmic Traders</div>
+                <div style="font-size: 0.8rem; color: var(--color-gold)">
+                  Export Alliance Partner
+                </div>
+              </div>
+            </div>
+
+            <div class="partner-card">
+              <div class="partner-icon"><i class="fas fa-paper-plane"></i></div>
+              <div>
+                <div class="partner-name">RV Traders</div>
+                <div style="font-size: 0.8rem; color: var(--color-gold)">
+                  Global Trade Partner
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------
+  TESTIMONIALS SECTION
+  --------------------------------------------------- -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="subtitle-badge">
+            <i class="fas fa-quote-left"></i> Client Reviews
+          </div>
+          <h2 class="section-title">
+            What Global Buyers <span class="text-gold">Say</span>
+          </h2>
+          <p class="section-desc">
+            Trusted by importers, distributors, and processing hubs around the
+            globe.
+          </p>
+        </div>
+
+        <div class="testimonial-slider reveal">
+          <div class="testimonial-card">
+            <div class="stars-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-quote" id="testimonial-quote">
+              "SKY Traders has been our primary coconut vendor for over 3 years.
+              Their semi-husked coconuts have consistent weight, zero spoilage,
+              and superb shelf life in Dubai."
+            </p>
+            <div class="client-info">
+              <div class="client-name" id="testimonial-name">
+                Ahmed Al-Maktoum
+              </div>
+              <div class="client-role" id="testimonial-role">
+                Procurement Director, Gulf Fresh Foods (Dubai, UAE)
+              </div>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                gap: 16px;
+                margin-top: 30px;
+              "
+            >
+              <button
+                class="btn-outline"
+                id="test-prev"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  padding: 0;
+                  border-radius: 50%;
+                "
+              >
+                <i class="fas fa-arrow-left"></i>
+              </button>
+              <button
+                class="btn-outline"
+                id="test-next"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  padding: 0;
+                  border-radius: 50%;
+                "
+              >
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------
+  ENQUIRY FORM & CONTACT SECTION
+  --------------------------------------------------- -->
+    <section
+      id="enquiry"
+      class="section-padding"
+      style="background: rgba(4, 37, 28, 0.8)"
+    >
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="subtitle-badge">
+            <i class="fas fa-envelope-open-text"></i> Connect With Us
+          </div>
+          <h2 class="section-title">
+            Export <span class="text-gold">Enquiry & Contact</span>
+          </h2>
+          <p class="section-desc">
+            Get an instant container quotation or schedule a meeting with our
+            export specialists.
+          </p>
+        </div>
+
+        <div class="enquiry-contact-grid">
+          <!-- Enquiry Glass Form -->
+          <div class="enquiry-card reveal-left">
+            <h3
+              style="
+                font-size: 1.6rem;
+                color: var(--color-cream);
+                margin-bottom: 24px;
+              "
+            >
+              Send Trade Enquiry
+            </h3>
+            <form id="enquiry-form">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="field-name">Your Name *</label>
+                  <input
+                    type="text"
+                    id="field-name"
+                    class="form-control"
+                    placeholder="e.g. John Doe"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="field-company"
+                    >Company Name</label
+                  >
+                  <input
+                    type="text"
+                    id="field-company"
+                    class="form-control"
+                    placeholder="e.g. Al-Bahar General Trading"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="field-gstin"
+                    >GST IN (If India)</label
+                  >
+                  <input
+                    type="text"
+                    id="field-gstin"
+                    class="form-control"
+                    placeholder="Optional GST Registration"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="field-phone"
+                    >Contact Number *</label
+                  >
+                  <input
+                    type="tel"
+                    id="field-phone"
+                    class="form-control"
+                    placeholder="+91 / +971 ..."
+                    required
+                  />
+                </div>
+
+                <div class="form-group full-width">
+                  <label class="form-label" for="field-email"
+                    >Email Address *</label
+                  >
+                  <input
+                    type="email"
+                    id="field-email"
+                    class="form-control"
+                    placeholder="buyer@company.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-group full-width">
+                  <label class="form-label" for="field-location"
+                    >Location / Destination Address</label
+                  >
+                  <input
+                    type="text"
+                    id="field-location"
+                    class="form-control"
+                    placeholder="e.g. Jebel Ali Port, Dubai, UAE"
+                  />
+                </div>
+
+                <div class="form-group full-width">
+                  <label class="form-label" for="field-message"
+                    >Requirement / Message</label
+                  >
+                  <textarea
+                    id="field-message"
+                    class="form-control"
+                    rows="4"
+                    placeholder="Specify required quantity (e.g. 1x40ft FCL Semi Husked), size preferences, destination port..."
+                  ></textarea>
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                class="btn-primary"
+                style="width: 100%; margin-top: 24px"
+              >
+                <i class="fas fa-paper-plane"></i> Submit Export Enquiry
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info Box -->
+          <div class="contact-card reveal-right" id="contact">
+            <div>
+              <h3
+                style="
+                  font-size: 1.6rem;
+                  color: var(--color-cream);
+                  margin-bottom: 24px;
+                "
+              >
+                Contact Info
+              </h3>
+
+              <div class="contact-info-list">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="contact-text">
+                    <h4>Call / WhatsApp</h4>
+                    <p>
+                      <a
+                        href="tel:6380849351"
+                        style="color: var(--color-gold-light); font-weight: 700"
+                        >+91 6380849351</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="contact-text">
+                    <h4>Official Email</h4>
+                    <p>
+                      <a
+                        href="mailto:skytraders@gmail.com"
+                        style="color: var(--color-gold-light)"
+                        >skytraders@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="contact-text">
+                    <h4>Head Office Address</h4>
+                    <p>Thungavi, Udumelpet,<br />Tamil Nadu, India</p>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/916380849351?text=Hello%20SKY%20Traders,%20I%20want%20to%20inquire%20about%20coconut%20export."
+                target="_blank"
+                class="whatsapp-btn"
+                style="width: 100%"
+              >
+                <i class="fab fa-whatsapp" style="font-size: 1.4rem"></i> Chat
+                on WhatsApp
+              </a>
+            </div>
+
+            <!-- Google Maps Embed -->
+            <div class="map-embed">
+              <iframe
+                src="https://maps.google.com/maps?q=Udumalaipettai,%20Tamil%20Nadu,%20India&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------
+  FOOTER
+  --------------------------------------------------- -->
+    <footer class="luxury-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img
+              src="assets/logo-light.svg"
+              alt="SKY Traders Logo"
+              class="footer-logo"
+            />
+            <p class="footer-desc">
+              Premier Indian Coconut Exporters specializing in premium quality
+              Semi Husked, Fully Husked, and Fresh Coconuts from Udumelpet,
+              Tamil Nadu.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://wa.me/916380849351"
+                class="social-icon"
+                aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li class="footer-link"><a href="#home">Home</a></li>
+              <li class="footer-link"><a href="#about">About Us</a></li>
+              <li class="footer-link"><a href="#products">Products</a></li>
+              <li class="footer-link">
+                <a href="#export-process">Export Process</a>
+              </li>
+              <li class="footer-link"><a href="#gallery">Gallery</a></li>
+              <li class="footer-link"><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Export Products</h4>
+            <ul class="footer-links">
+              <li class="footer-link">
+                <a href="#products">Semi Husked Coconut</a>
+              </li>
+              <li class="footer-link">
+                <a href="#products">Fully Husked Coconut</a>
+              </li>
+              <li class="footer-link">
+                <a href="#products">Fresh Mature Coconut</a>
+              </li>
+              <li class="footer-link">
+                <a href="#products">Export Packaging</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Sister / Partners</h4>
+            <ul class="footer-links">
+              <li class="footer-link">
+                <a href="#partners">Cosmic Traders</a>
+              </li>
+              <li class="footer-link"><a href="#partners">RV Traders</a></li>
+            </ul>
+
+            <div style="margin-top: 24px">
+              <span
+                style="
+                  font-size: 0.8rem;
+                  color: var(--color-gold);
+                  text-transform: uppercase;
+                  letter-spacing: 1px;
+                "
+                >Global Hotline</span
+              >
+              <div
+                style="
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  color: var(--color-cream);
+                  margin-top: 4px;
+                "
+              >
+                +91 6380849351
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 SKY Traders. All Rights Reserved. Designed for Global
+            Trade Excellence • Udumelpet, Tamil Nadu, India.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Get Quote Modal Popup -->
+    <div class="lightbox" id="quote-modal">
+      <div
+        style="
+          background: var(--glass-dark-card);
+          backdrop-filter: var(--glass-blur);
+          border: 1px solid var(--color-gold);
+          border-radius: 24px;
+          padding: 40px;
+          max-width: 500px;
+          width: 90%;
+          position: relative;
+          box-shadow: var(--shadow-luxury);
+        "
+      >
+        <span
+          class="lightbox-close"
+          id="quote-modal-close"
+          style="top: 15px; right: 20px"
+          >&times;</span
+        >
+        <h3
+          style="
+            font-size: 1.6rem;
+            color: var(--color-cream);
+            margin-bottom: 8px;
+          "
+        >
+          Request Export Quote
+        </h3>
+        <p
+          id="quote-product-name"
+          style="
+            color: var(--color-gold);
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+          "
+        >
+          Product Selected: General Inquiry
+        </p>
+
+        <form
+          onsubmit="
+            event.preventDefault();
+            window.open(
+              'https://wa.me/916380849351?text=Quotation%20Request%20for%20SKY%20Traders',
+              '_blank',
+            );
+          "
+        >
+          <div class="form-group" style="margin-bottom: 14px">
+            <label class="form-label">Full Name</label>
+            <input
+              type="text"
+              class="form-control"
+              required
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group" style="margin-bottom: 14px">
+            <label class="form-label">Phone / WhatsApp</label>
+            <input
+              type="tel"
+              class="form-control"
+              required
+              placeholder="+91 ..."
+            />
+          </div>
+          <div class="form-group" style="margin-bottom: 20px">
+            <label class="form-label">Destination Country / Port</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="e.g. Dubai, Jebel Ali"
+            />
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%">
+            <i class="fab fa-whatsapp"></i> Get Quote via WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/app.js"></script>
+    <script src="js/hero-canvas.js"></script>
+    <script src="js/world-map.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/enquiry.js"></script>
+  </body>
+</html>
